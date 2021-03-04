@@ -19,6 +19,7 @@ module MessageMe
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.action_controller.allow_forgery_protection = false
+    # config.action_controller.allow_forgery_protection = false
+    config.action_cable.allowed_request_origins = ['https://dashboard.heroku.com/']
   end
 end
