@@ -13,6 +13,7 @@ consumer.subscriptions.create("ChatroomChannel", {
     $('#message-container').append (data.mod_message);
     if($('#messages').length > 0){
       $('#messages').scrollTop($('#messages')[0].scrollHeight);
+      $('#message_body').text('')
     }
   }
 });
