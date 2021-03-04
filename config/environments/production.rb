@@ -32,7 +32,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = 'http://assets.example.com'
-
+  ENV['REDIS_URL'] = 'redis://:p35c98520ab8bc925f16a5592ea86b8febd06dcea5a5dcfec134f3e3f5d24de28@ec2-54-205-208-183.compute-1.amazonaws.com:18919'
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
